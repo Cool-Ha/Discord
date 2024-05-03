@@ -24,17 +24,24 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button title_button = findViewById(R.id btn_title);
-        Button search_button = findViewById(R.id.btn_search);
-        Button button = findViewById(R.id btn_title);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                CharSequence search = "검색이 가능합니다.";
-                int duration = Toast.LENGTH_SHORT;
 
-                Toast toast = Toast.makeText(MainActivity.this, search, duration);
-                toast.show();
-            }
-        });
+        int[] clickers = {R.id.btn_title, R.id.btn_search, R.id.btn_invite, R.id.btn_event, R.id.btn_info, R.id.btn_ask_team,
+                R.id.btn_ai, R.id.btn_app, R.id.btn_proj, R.id.btn_lunch, R.id.btn_off, R.id.btn_share, R.id.btn_study};
+
+
+        for (int i = 0; i < clickers.length; i++){
+
+
+            Button button = findViewById(clickers[i]);
+            button.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    CharSequence text = "현재 준비 중 입니다.";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(MainActivity.this, text, duration);
+                    toast.show();
+                }
+            });
+        }
     }
 }

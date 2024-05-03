@@ -72,11 +72,11 @@
         android:drawableTint="@color/white"
         />
 
-    <Button
-        android:backgroundTint="#323232"
+    <TextView
         android:id="@+id/btn_check"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="확인해주세요!"
         app:layout_constraintTop_toBottomOf="@id/btn_invite"
         app:layout_constraintStart_toStartOf="@id/btn_search"
@@ -98,11 +98,11 @@
         android:textColor="@color/white"
         />
 
-    <Button
-        android:backgroundTint="#323232"
+    <TextView
         android:id="@+id/btn_ask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="무엇이든 물어보세요!"
         app:layout_constraintTop_toBottomOf="@id/btn_info"
         app:layout_constraintStart_toStartOf="@id/btn_search"
@@ -126,11 +126,11 @@
         android:textColor="@color/white"
         />
 
-    <Button
-        android:backgroundTint="#323232"
+    <TextView
         android:id="@+id/btn_edu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="열심히 교육받아요!"
         app:layout_constraintTop_toBottomOf="@id/btn_ask_team"
         app:layout_constraintStart_toStartOf="@id/btn_search"
@@ -178,11 +178,11 @@
         android:textColor="@color/white"
         />
 
-    <Button
-        android:backgroundTint="#323232"
+    <TextView
         android:id="@+id/btn_friend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="친해져요!"
         app:layout_constraintTop_toBottomOf="@id/btn_proj"
         app:layout_constraintStart_toStartOf="@id/btn_search"
