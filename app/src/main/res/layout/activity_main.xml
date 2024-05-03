@@ -7,13 +7,254 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#323232"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="서울_인텔 인공지능 인재 양성 과정 2기"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:drawableTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_invite"
+        android:text="검색하기"
+        android:textColor="@color/white"
+        app:layout_constraintWidth_percent="0.5"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawableTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_invite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toStartOf="@id/btn_event"
+        app:layout_constraintStart_toEndOf="@id/btn_search"
+        app:layout_constraintTop_toBottomOf="@id/btn_title"
+        app:layout_constraintWidth_percent="0.18"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawableTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_event"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_invite"
+        app:layout_constraintTop_toBottomOf="@id/btn_title"
+        app:layout_constraintWidth_percent="0.18"
+        android:drawableLeft="@drawable/ic_calender"
+        android:drawableTint="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="확인해주세요!"
+        app:layout_constraintTop_toBottomOf="@id/btn_invite"
+        app:layout_constraintStart_toStartOf="@id/btn_search"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_arrow_down"
+        android:drawableTint="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="# 공지사항"
+        app:layout_constraintTop_toBottomOf="@id/btn_check"
+        app:layout_constraintStart_toStartOf="@id/btn_check"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_ask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="무엇이든 물어보세요!"
+        app:layout_constraintTop_toBottomOf="@id/btn_info"
+        app:layout_constraintStart_toStartOf="@id/btn_search"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_arrow_down"
+        android:drawableTint="@color/white"
+        />
+
+
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_ask_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 동기에게-물어봐"
+        app:layout_constraintTop_toBottomOf="@id/btn_ask"
+        app:layout_constraintStart_toStartOf="@id/btn_ask"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="열심히 교육받아요!"
+        app:layout_constraintTop_toBottomOf="@id/btn_ask_team"
+        app:layout_constraintStart_toStartOf="@id/btn_search"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_arrow_down"
+        android:drawableTint="@color/white"
+        />
+
+
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_ai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 인공지능-과정"
+        app:layout_constraintStart_toStartOf="@id/btn_edu"
+        app:layout_constraintTop_toBottomOf="@id/btn_edu"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 앱-과정"
+        app:layout_constraintStart_toStartOf="@id/btn_edu"
+        app:layout_constraintTop_toBottomOf="@id/btn_ai"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_proj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 프로젝트-과정"
+        app:layout_constraintStart_toStartOf="@id/btn_edu"
+        app:layout_constraintTop_toBottomOf="@id/btn_app"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="친해져요!"
+        app:layout_constraintTop_toBottomOf="@id/btn_proj"
+        app:layout_constraintStart_toStartOf="@id/btn_search"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_arrow_down"
+        android:drawableTint="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 점심-추천해요"
+        app:layout_constraintStart_toStartOf="@id/btn_friend"
+        app:layout_constraintTop_toBottomOf="@id/btn_friend"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 오프더레코드"
+        app:layout_constraintStart_toStartOf="@id/btn_friend"
+        app:layout_constraintTop_toBottomOf="@id/btn_lunch"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="# 정보-공유해요"
+        app:layout_constraintStart_toStartOf="@id/btn_friend"
+        app:layout_constraintTop_toBottomOf="@id/btn_off"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_share"
+        app:layout_constraintStart_toStartOf="@id/btn_friend"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_mode"
+        android:drawableTint="@color/white"
+        />
+
+    <Button
+        android:backgroundTint="#323232"
+        android:id="@+id/btn_study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스터디실"
+        app:layout_constraintStart_toStartOf="@id/btn_share"
+        app:layout_constraintTop_toBottomOf="@id/btn_share"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_mode"
+        android:drawableTint="@color/white"
+        />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

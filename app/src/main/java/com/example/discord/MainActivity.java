@@ -1,6 +1,9 @@
 package com.example.discord;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +22,19 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        Button title_button = findViewById(R.id btn_title);
+        Button search_button = findViewById(R.id.btn_search);
+        Button button = findViewById(R.id btn_title);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                CharSequence search = "검색이 가능합니다.";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(MainActivity.this, search, duration);
+                toast.show();
+            }
         });
     }
 }
